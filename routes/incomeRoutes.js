@@ -7,7 +7,7 @@ const incomeRouter= express.Router();
 
 incomeRouter.post("/add",authMiddleware,addIncome);
 incomeRouter.get("/get",authMiddleware,getAllIncome);
-incomeRouter.put("/update",authMiddleware,updateIncome);
+incomeRouter.put("/update/:id",authMiddleware,updateIncome);
 incomeRouter.delete("/delete/:id",authMiddleware,deleteIncome);
 incomeRouter.get("/overview",authMiddleware, getIncomeOverview);
 

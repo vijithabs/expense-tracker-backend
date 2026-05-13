@@ -32,5 +32,5 @@ const incomeSchema = new mongoose.Schema({
 });
 
 
-let incomeModel = mongoose.models.income|| mongoose.model('expense', incomeSchema);
+let incomeModel = mongoose.models.income|| mongoose.model('income', incomeSchema);
 module.exports = incomeModel
